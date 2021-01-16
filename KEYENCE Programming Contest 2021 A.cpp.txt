@@ -1,0 +1,57 @@
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+#define endl "\n"
+int main()
+{
+    ios_base::sync_with_stdio(false); cin.tie(nullptr);
+    vector < ll > c;
+    ll n; cin >> n; vector < ll > a(n), b(n);
+    for(auto &i : a)
+        cin >> i;
+
+
+
+     for(auto &i : b)
+        cin >> i;
+
+    ll mx = -1, oo = -1, ooo = -1, pp = 1;
+    for(ll i = 0; i < b.size(); i++)
+    {
+            oo = max(oo , a[i]);
+
+            ll k = oo * b[i];
+
+            if(k > pp)
+            {
+                pp = k;
+            }
+            c.push_back(pp);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    for(auto i : c)
+        cout << i << endl;
+
+
+
+}
